@@ -134,6 +134,7 @@ h2 span{
     animation-name: bienvenida;
     color: darkgray;
     margin-bottom: 10px;
+    font-size: 18px;
 }
 
 .gmail{
@@ -168,6 +169,8 @@ h2 span{
     color: #ef6d1c;
     font-size: 18px;
     width: 900px;
+    text-align: justify;
+    text-shadow: 4px 5px 4px black;
 }
 
 #sobreMi .importante{

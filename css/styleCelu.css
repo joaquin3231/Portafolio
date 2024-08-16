@@ -72,14 +72,16 @@
 
     #sobreMi .sobreMi {
         font-size: 18px;
-        width: 90%;
+        width: 100%;
+        text-align: justify;
+        text-shadow: 4px 5px 4px black;
     }
 
     #sobreMi .importante {
         margin-top: 20px;
         font-size: 21px;
         font-weight: bold;
-        width: 90%;
+        width: 100%;
         text-shadow: 17px 20px 7px #ad52d1c2;
         color: #02fea0;
     }
@@ -147,16 +149,18 @@
     .info div {
         display: flex;
         justify-content: space-between;
-        width: 60%;
+        width: 100%;
         margin-bottom: 5px;
         font-weight: bold;
     }
 
     .info .eduTitulo {
-        font-size: 23px;
+        font-size: 20px;
         font-weight: bolder;
         color: #ab49a7;
         text-shadow: 7px 4px 6px black;
+
+        flex: 3;
     }
 
     .info p {
