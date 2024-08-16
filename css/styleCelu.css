@@ -53,66 +53,14 @@
 
 
     /* ESTILOS PARA EL RESTO DE LA PAGINA*/
-    .contenido {
-        width: 90%;
-        margin: auto;
+
+    .contenedor{
+        width: min-content;
     }
 
-    h2 {
-        font-family: "Rowdies", sans-serif;
-        font-size: 40px;
-        margin-bottom: 15px;
-        color: #69347ec2;
-    }
-
-    h2 span {
-        font-family: "Rowdies", sans-serif;
-        font-size: 40px;
-        margin-bottom: 15px;
-        color: #02fea0;
-        width: 500px;
-    }
-
-    /*SECCIONES*/
     /*ESTILOS PARA LA SECCION YO*/
     #yo {
         padding-top: 150px;
-    }
-
-    #yo h2 {
-        animation-duration: 2.5s;
-        animation-name: yoTitulo;
-    }
-
-    .bienvenida {
-        overflow: hidden;
-        white-space: nowrap;
-        animation-duration: 5s;
-        animation-name: bienvenida;
-        color: darkgray;
-        margin-bottom: 10px;
-    }
-
-    .gmail {
-        color: #8099ca;
-        margin-bottom: 20px;
-    }
-
-    .btnDownload {
-        padding: 10px;
-        background-color: #2eb74c;
-        border-radius: 15px;
-        box-shadow: 2px 2px #00000052;
-        color: #012a07;
-        font-weight: bold;
-    }
-
-    .imgYo {
-        width: 60px;
-        margin-top: 30px;
-        margin-right: 20px;
-        background-color: white;
-        border-radius: 10%;
     }
 
     /*ESTILOS PARA LA SECCION sobreMi*/
@@ -123,7 +71,6 @@
     }
 
     #sobreMi .sobreMi {
-        color: #ef6d1c;
         font-size: 18px;
         width: 90%;
     }
@@ -155,7 +102,7 @@
 
     .proyecto {
         margin: auto;
-        width: 75%;
+        width: 90%;
         background-color: #2f9fa5;
 
         margin-bottom: 15px;
@@ -179,7 +126,7 @@
 
     .img-proyecto {
         width: 100%;
-        height: 160px;
+        height: 200px;
     }
 
     .descripcion {
