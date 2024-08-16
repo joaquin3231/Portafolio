@@ -1,4 +1,4 @@
-alert("hola")
+alert("hola");
 
 const navEnlaces = document.querySelectorAll(".link-ubicacion");
 const enlace = document.querySelector(".link-ubicacion");
