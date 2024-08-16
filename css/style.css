@@ -19,8 +19,51 @@ a{
 }
 
 /* ESTILOS PARA EL NAV */
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: #000000;
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+    top: 0;
+}
+nav{
+    width: 100%;
+}
 
-.nav-izq{
+.nav-list {
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.nav-list li a {
+    text-decoration: none;
+    color: #c0915c;
+    font-size-adjust: 15px;
+    font-weight: 500;
+}
+
+.link-ubicacion:hover{
+    font-weight: 900;
+    font-size: 20px;
+}
+.nav-list li a.activado{
+    font-weight: 900;
+    font-size: 20px;
+} 
+
+
+.abrir-menu,
+.cerrar-menu {
+    display: none;
+}
+
+/* .nav-izq{
     background-color: #000000;
     display: flex;
     align-items: center;
@@ -45,7 +88,7 @@ a{
     font-weight: 900;
     font-size: 20px;
     color: #9393cf;
-}
+} */
 
 
 /* ESTILOS PARA EL RESTO DE LA PAGINA*/

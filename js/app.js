@@ -1,22 +1,20 @@
-
-const navEnlaces = document.querySelectorAll(".link-ubicacion");
-const enlace = document.querySelector(".link-ubicacion");
-
-const yo = document.querySelector("#yo");
-const sobreMi = document.querySelector("#sobreMi");
-const proyectos = document.querySelector("#proyectos");
-const educacion = document.querySelector("#educacion");
-const habilidades = document.querySelector("#habilidades");
-const contactos = document.querySelector("#contactos");
+const enlace = document.querySelector(".nav-list");
 
 enlace, addEventListener("mousedown", (e) => {
-    const { parentElement, id, classList } = e.target
-    if (parentElement.classList.contains("nav-izq")) {
-        for (let i = 0; i < navEnlaces.length; i++) {
-            if (navEnlaces[i].classList.contains("activado") && navEnlaces[i].id !== id) {
-                navEnlaces[i].classList.remove("activado")
+
+    const {id, classList } = e.target
+
+
+    if (classList.contains("link-ubicacion")) {
+
+        console.log(enlace.children[0].children[0])
+
+        for (let i = 0; i < enlace.childElementCount; i++) {
+            if (enlace.children[i].children[0].classList.contains("activado") && enlace.children[i].children[0].id !== id) {
+                enlace.children[i].children[0].classList.remove("activado")
             }
         }
+
         if (classList.contains("activado")) {
             classList.remove("activado")
         } else {
