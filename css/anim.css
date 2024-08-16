@@ -41,6 +41,29 @@
     }
 }
 
+@keyframes projectoCel {
+    from { /* inicio de animacion */
+        width: 48%;
+    }
+  
+    to { /* final de la animacion */
+        width: 50%;
+    }
+}
+
+
+
+
+@keyframes projectoCelSal {
+    from { /* inicio de animacion */
+        width: 50%;
+    }
+  
+    to { /* final de la animacion */
+        width: 48%;
+    }
+}
+
 
 @keyframes projectoImg {
     from { /* inicio de animacion */
