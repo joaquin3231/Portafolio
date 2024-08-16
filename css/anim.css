@@ -1,0 +1,53 @@
+@keyframes yoTitulo {
+    from { /* inicio de animacion */
+        transform: translateX(200px);
+    }
+  
+    to { /* final de la animacion */
+        transform: translateX(0);
+    }
+}
+
+@keyframes bienvenida {
+    from { /* inicio de animacion */
+        width: 0;
+    }
+  
+    to { /* final de la animacion */
+        width: 530px;
+    }
+}
+
+@keyframes projecto {
+    from { /* inicio de animacion */
+        width: 24%;
+    }
+  
+    to { /* final de la animacion */
+        width: 27%;
+    }
+}
+
+
+
+
+@keyframes projectoSal {
+    from { /* inicio de animacion */
+        width: 27%;
+    }
+  
+    to { /* final de la animacion */
+        width: 24%;
+    }
+}
+
+
+@keyframes projectoImg {
+    from { /* inicio de animacion */
+        height: 160px;
+    }
+  
+    to { /* final de la animacion */
+        height: 180px;
+    }
+}

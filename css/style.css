@@ -1,0 +1,288 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-family: "Merriweather Sans", sans-serif; 
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    background-color: #251d46;
+    /* background: linear-gradient(black, #251d46); */
+}
+
+a{
+    text-decoration: none;
+}
+
+/* ESTILOS PARA EL NAV */
+
+.nav-izq{
+    background-color: #000000;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    position: fixed;
+    width: 100%;
+    padding: 10px 0;
+    z-index: 1;
+    top: 0;
+}
+.link-ubicacion{
+    color: #c0915c;
+    font-weight: 700;
+    margin: 5px 0;
+}
+.link-ubicacion:hover{
+    font-weight: 900;
+    font-size: 20px;
+    color: #9393cf;
+}
+.activado{
+    font-weight: 900;
+    font-size: 20px;
+    color: #9393cf;
+}
+
+
+/* ESTILOS PARA EL RESTO DE LA PAGINA*/
+.contenido{
+    width: 90%; 
+    margin: auto;
+    
+}
+
+h2{
+    font-family: "Rowdies", sans-serif;
+    font-size: 50px;
+    margin-bottom: 15px;
+    color: #69347ec2;
+    width: 500px;
+}
+
+h2 span{
+    font-family: "Rowdies", sans-serif;
+    font-size: 50px;
+    margin-bottom: 15px;
+    color: #02fea0;
+    width: 500px;
+
+}
+/*SECCIONES*/
+
+
+/*ESTILOS PARA LA SECCION YO*/
+#yo{
+    padding-top: 200px;
+}
+
+#yo h2{
+    animation-duration: 2.5s;
+    animation-name: yoTitulo;
+}
+
+.bienvenida{
+    overflow: hidden;
+    white-space: nowrap;
+    animation-duration: 5s;
+    animation-name: bienvenida;
+    color: darkgray;
+    margin-bottom: 10px;
+}
+
+.gmail{
+    color: #8099ca;
+    margin-bottom: 20px;
+}
+
+.btnDownload{
+    padding: 10px;
+    background-color: #2eb74c;
+    border-radius: 15px;
+    box-shadow: 2px 2px #00000052;
+    color: #012a07;
+    font-weight: bold;
+}
+
+.imgYo{
+    width: 60px;
+    margin-top: 30px;
+    margin-right: 20px;
+    background-color: white;
+    border-radius: 10%;
+}
+/*ESTILOS PARA LA SECCION sobreMi*/
+#sobreMi{
+    padding-top: 100px;
+    margin-top: 150px;
+    margin-bottom: 150px;
+}
+
+#sobreMi .sobreMi{
+    color: #ef6d1c;
+    font-size: 18px;
+    width: 900px;
+}
+
+#sobreMi .importante{
+    margin-top: 20px;
+    font-size: 21px;
+    font-weight: bold;
+    width: 1020px;
+    text-shadow: 17px 20px 7px #ad52d1c2;
+    color: #02fea0;
+}
+
+
+/*ESTILOS DE PROYECTOS*/
+#proyectos{
+    padding-top: 100px;
+    margin-bottom: 100px;
+}
+.separado{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 1%;
+}
+
+.proyecto{
+    width: 24%;
+    background-color: #2f9fa5;
+    
+    margin-bottom: 15px;
+    border-radius: 10px;
+    
+    animation-duration: 0.25s; /* duracion de la animacio */
+    animation-name: projectoSal; /* nombre de la funcion para animar */
+}
+
+.proyecto:hover{
+    width: 27%;
+
+    animation-duration: 1s; /* duracion de la animacio */
+    animation-name: projecto; /* nombre de la funcion para animar */
+}
+
+.proyecto:hover .img-proyecto{
+    height: 180px;
+
+    animation-duration: 1s; /* duracion de la animacio */
+    animation-name: projectoImg; /* nombre de la funcion para animar */
+}
+
+.titulo{
+    text-align: center;
+    font-size: 20px;
+    margin: 8px;
+}
+
+.titulo a{
+    font-family: "Rowdies", sans-serif;
+    font-weight: 700;
+    color: #000000;
+}
+
+.img-proyecto{
+    width: 100%;
+    height: 160px;
+}
+
+.descripcion{
+    padding: 10px;
+    font-size: 15px;
+}
+
+/*ESTILOS DE EDUCACION*/
+#educacion{
+    padding-top: 100px;
+    margin-bottom: 100px;
+}
+
+.info{
+    margin: 15px 0;
+}
+
+.info div{
+    display: flex;
+    justify-content: space-between;
+    width: 60%;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.info .eduTitulo{
+    font-size: 23px;
+    font-weight: bolder;
+    color: #ab49a7;
+    text-shadow: 7px 4px 6px black;
+}
+.info p{
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.info .eduEnCurso{
+    color: #d1c73c;
+}
+
+.info .eduTiempo{
+    color: #4bf94b;
+}
+
+.info .educacion{
+    color: #f29111;
+    text-shadow: 4px 3px 5px #00758f;
+}
+
+/*ESTILOS DE HABILIDADES*/
+#habilidades{
+    padding-top: 100px;
+}
+
+#habilidades .muestraPorcentaje, #habilidades .habilidad{
+    display: flex;
+    justify-content: center;
+    width: 500px;
+}
+
+.habilidad img{
+    height: 100px;
+    margin: 5px 10px 0;
+}
+
+/*ESTILOS DE CONTACTOS*/
+#contactos{
+    margin-top: 200px;
+}
+
+#contactos div{
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+#contactos div p{
+    font-size: 18px;
+}
+
+#contactos div img{
+    width: 20px;
+    margin-right: 20px;
+}
+
+.final{
+    width: 60%;
+    font-size: 31px;
+    text-shadow: 20px 19px 10px #ad52d1c2;
+    color: #02fea0;
+}
+
+.finalImg{
+    width: 69px;
+    margin: 10px 30px;
+    margin-bottom: 50px;
+}
