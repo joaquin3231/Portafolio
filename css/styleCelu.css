@@ -154,34 +154,15 @@
     }
 
     .proyecto {
-        width: 48%;
+        margin: auto;
+        width: 75%;
         background-color: #2f9fa5;
 
         margin-bottom: 15px;
         border-radius: 10px;
 
-        animation-duration: 0.25s;
         /* duracion de la animacio */
-        animation-name: projectoCelSal;
-        /* nombre de la funcion para animar */
-    }
-
-    .proyecto:hover {
-        width: 50%;
-
-        animation-duration: 1s;
-        /* duracion de la animacio */
-        animation-name: projectoCel;
-        /* nombre de la funcion para animar */
-    }
-
-    .proyecto:hover .img-proyecto {
-        height: 180px;
-
-        animation-duration: 1s;
-        /* duracion de la animacio */
-        animation-name: projectoImg;
-        /* nombre de la funcion para animar */
+        animation-name: none;
     }
 
     .titulo {

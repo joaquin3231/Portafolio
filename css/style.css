@@ -198,23 +198,29 @@ h2 span{
     
     margin-bottom: 15px;
     border-radius: 10px;
+}
+
+/*AGREGANDO ANIMACIONES SOLO PARA PC*/
+@media screen and (min-width: 601px) {
+    .proyecto{
+        animation-duration: 0.25s; /* duracion de la animacio */
+        animation-name: projectoSal; /* nombre de la funcion para animar */
+    }
     
-    animation-duration: 0.25s; /* duracion de la animacio */
-    animation-name: projectoSal; /* nombre de la funcion para animar */
-}
+    .proyecto:hover{
+        width: 27%;
+        animation-duration: 1s; /* duracion de la animacio */
+        animation-name: projecto; /* nombre de la funcion para animar */
+    }
+    
+    .proyecto:hover .img-proyecto{
+        animation-duration: 1s; /* duracion de la animacio */
+        animation-name: projectoImg; /* nombre de la funcion para animar */
+    }
 
-.proyecto:hover{
-    width: 27%;
-
-    animation-duration: 1s; /* duracion de la animacio */
-    animation-name: projecto; /* nombre de la funcion para animar */
-}
-
-.proyecto:hover .img-proyecto{
-    height: 180px;
-
-    animation-duration: 1s; /* duracion de la animacio */
-    animation-name: projectoImg; /* nombre de la funcion para animar */
+    .proyecto:hover .img-proyecto{
+        height: 180px;
+    }
 }
 
 .titulo{
