@@ -59,6 +59,11 @@
         width: min-content;
     }
 
+    header {
+        padding: 2%;
+        width: 94%;
+    }    
+
     /*ESTILOS PARA LA SECCION YO*/
     #yo {
         padding-top: 150px;
