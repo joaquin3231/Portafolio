@@ -1,3 +1,4 @@
+/* CODIGO PARA ACTIVAR ESTILOS EN LOS BOTONES DEL NAV*/
 const enlace = document.querySelector(".nav-list");
 
 enlace, addEventListener("mousedown", (e) => {
@@ -15,11 +16,26 @@ enlace, addEventListener("mousedown", (e) => {
             }
         }
 
-        if (classList.contains("activado")) {
-            classList.remove("activado")
-        } else {
+        if (!classList.contains("activado")) {
             classList.add("activado")
         }
-        // console.log(id);
     }
+})
+
+/* CODIGO PARA ACTIVAR/DESACTIVAR EL MODO OSCURO/CLARO */
+const switchButton = document.querySelector(".switch");
+
+switchButton.addEventListener("click", (e) => {
+    const body = document.querySelector("body");
+
+    if (body.classList.contains("oscuro")) {
+        body.classList.remove("oscuro");
+    } else {
+        body.classList.add("oscuro");
+    }
+
+    e.target.classList.add("desacClick")
+    setTimeout(()=>{
+        e.target.classList.remove("desacClick")
+    }, 500)
 })

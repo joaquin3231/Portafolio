@@ -1,3 +1,4 @@
+/*anim para el movimiento de mi nombre*/
 @keyframes yoTitulo {
     from { /* inicio de animacion */
         transform: translateX(200px);
@@ -8,45 +9,46 @@
     }
 }
 
+/*anim para la aparicion del texto*/
 @keyframes bienvenida {
-    from { /* inicio de animacion */
+    from { 
         width: 0;
     }
   
-    to { /* final de la animacion */
+    to {
         width: 530px;
     }
 }
 
+/*anim para la expacion del proyecto*/
 @keyframes projecto {
-    from { /* inicio de animacion */
+    from { 
         width: 24%;
     }
   
-    to { /* final de la animacion */
+    to {
         width: 27%;
     }
 }
 
-
-
-
+/*anim para la disminucion del proyecto*/
 @keyframes projectoSal {
-    from { /* inicio de animacion */
+    from { 
         width: 27%;
     }
   
-    to { /* final de la animacion */
+    to {
         width: 24%;
     }
 }
 
+/*anim para agrandar las imagenes del proyecto*/
 @keyframes projectoImg {
-    from { /* inicio de animacion */
+    from { 
         height: 160px;
     }
   
-    to { /* final de la animacion */
+    to {
         height: 180px;
     }
 }

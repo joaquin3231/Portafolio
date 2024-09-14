@@ -1,20 +1,16 @@
-*{
+* {
     margin: 0;
     padding: 0;
     border: 0;
-    font-family: "Merriweather Sans", sans-serif; 
+    font-family: "Merriweather Sans", sans-serif;
 }
 
-html{
+html {
     scroll-behavior: smooth;
 }
 
-body{
-    background-color: #251d46;
-    /* background: linear-gradient(black, #251d46); */
-}
 
-a{
+a {
     text-decoration: none;
 }
 
@@ -24,14 +20,14 @@ header {
     align-items: center;
     justify-content: space-between;
     padding: 20px;
-    background-color: #000000;
     position: fixed;
     width: 100%;
     z-index: 1;
     top: 0;
 }
-nav{
-    width: 100%;
+
+nav {
+    width: 90%;
 }
 
 .nav-list {
@@ -43,19 +39,19 @@ nav{
 
 .nav-list li a {
     text-decoration: none;
-    color: #c0915c;
     font-size-adjust: 15px;
     font-weight: 500;
 }
 
-.link-ubicacion:hover{
+.link-ubicacion:hover {
     font-weight: 900;
     font-size: 20px;
 }
-.nav-list li a.activado{
+
+.nav-list li a.activado {
     font-weight: 900;
     font-size: 20px;
-} 
+}
 
 
 .abrir-menu,
@@ -63,202 +59,219 @@ nav{
     display: none;
 }
 
-/* .nav-izq{
-    background-color: #000000;
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-    position: fixed;
-    width: 100%;
-    padding: 10px 0;
-    z-index: 1;
-    top: 0;
-}
-.link-ubicacion{
-    color: #c0915c;
-    font-weight: 700;
-    margin: 5px 0;
-}
-.link-ubicacion:hover{
-    font-weight: 900;
-    font-size: 20px;
-    color: #9393cf;
-}
-.activado{
-    font-weight: 900;
-    font-size: 20px;
-    color: #9393cf;
-} */
 
+/*ESTILOS PARA EL BOTON ON/OFF*/
+.toggleContainer {
+    position: relative;
+    width: 70px;
+    height: 30px;
+    flex: 1;
+}
+
+.desacClick {
+    pointer-events: none;
+}
+
+.toggle {
+    position: absolute;
+    width: 0;
+    height: 0;
+    /*antes de estar activo*/
+    &+.switch {
+        position: relative;
+        display: block;
+        background: rgb(255, 255, 255);
+        width: 70px;
+        height: 30px;
+        cursor: pointer;
+        border-radius: 30px;
+        transition: 0.5s;
+    }
+    &:checked+.switch {
+        background: rgb(83 46 46);
+    }
+
+    /*despues de estar activo*/
+    &+.switch:before {
+        content: "";
+        position: absolute;
+        width: 28px;
+        height: 28px;
+        top: 50%;
+        transform: translateY(-50%);
+        background: #000000;
+        border-radius: 50%;
+        margin: 0px 2px;
+        left: 0%;
+        transition: 1s;
+    }
+    &:checked+.switch:before {
+        left: 100%;
+        transform: translate(calc(-100% - 2px), -50%);
+        background: #ffffff;
+    }
+}
 
 /* ESTILOS PARA EL RESTO DE LA PAGINA*/
-.contenido{
-    width: 90%; 
+.contenido {
+    width: 90%;
     margin: auto;
-    
+
 }
 
-h2{
+h2 {
     font-family: "Rowdies", sans-serif;
     font-size: 50px;
     margin-bottom: 15px;
-    color: #69347ec2;
     width: 500px;
 }
 
-h2 span{
+h2 span {
     font-family: "Rowdies", sans-serif;
     font-size: 50px;
     margin-bottom: 15px;
-    color: #02fea0;
     width: 500px;
 
 }
+
 /*SECCIONES*/
 
 
 /*ESTILOS PARA LA SECCION YO*/
-#yo{
+#yo {
     padding-top: 200px;
 }
 
-#yo h2{
+#yo h2 {
     animation-duration: 2.5s;
     animation-name: yoTitulo;
 }
 
-.bienvenida{
+.bienvenida {
     overflow: hidden;
     white-space: nowrap;
     animation-duration: 5s;
     animation-name: bienvenida;
-    color: darkgray;
     margin-bottom: 10px;
     font-size: 18px;
 }
 
-.gmail{
-    color: #8099ca;
+.gmail {
     margin-bottom: 20px;
 }
 
-.btnDownload{
+.btnDownload {
     padding: 10px;
-    background-color: #2eb74c;
     border-radius: 15px;
     box-shadow: 2px 2px #00000052;
-    color: #012a07;
     font-weight: bold;
 }
 
-.imgYo{
+.imgYo {
     width: 60px;
     margin-top: 30px;
     margin-right: 20px;
-    background-color: white;
     border-radius: 10%;
 }
+
 /*ESTILOS PARA LA SECCION sobreMi*/
-#sobreMi{
+#sobreMi {
     padding-top: 100px;
     margin-top: 150px;
     margin-bottom: 150px;
 }
 
-#sobreMi .sobreMi{
-    color: #ef6d1c;
-    font-size: 18px;
-    width: 900px;
+#sobreMi .sobreMi {
+    font-size: 20px;
+    width: 83%;
     text-align: justify;
-    text-shadow: 4px 5px 4px black;
 }
 
-#sobreMi .importante{
+#sobreMi .importante {
     margin-top: 20px;
     font-size: 21px;
     font-weight: bold;
     width: 1020px;
-    text-shadow: 17px 20px 7px #ad52d1c2;
-    color: #02fea0;
 }
 
 
 /*ESTILOS DE PROYECTOS*/
-#proyectos{
+#proyectos {
     padding-top: 100px;
     margin-bottom: 100px;
 }
-.separado{
+
+.separado {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     padding: 1%;
 }
 
-.proyecto{
+.proyecto {
     width: 24%;
-    background-color: #2f9fa5;
-    
     margin-bottom: 15px;
     border-radius: 10px;
+    text-align: center;
+    padding-bottom: 5px;
 }
 
 /*AGREGANDO ANIMACIONES SOLO PARA PC*/
 @media screen and (min-width: 601px) {
-    .proyecto{
-        animation-duration: 0.25s; /* duracion de la animacio */
-        animation-name: projectoSal; /* nombre de la funcion para animar */
-    }
-    
-    .proyecto:hover{
-        width: 27%;
-        animation-duration: 1s; /* duracion de la animacio */
-        animation-name: projecto; /* nombre de la funcion para animar */
-    }
-    
-    .proyecto:hover .img-proyecto{
-        animation-duration: 1s; /* duracion de la animacio */
-        animation-name: projectoImg; /* nombre de la funcion para animar */
+    .proyecto {
+        animation-duration: 0.25s;
+        /* duracion de la animacio */
+        animation-name: projectoSal;
+        /* nombre de la funcion para animar */
     }
 
-    .proyecto:hover .img-proyecto{
+    .proyecto:hover {
+        width: 27%;
+        animation-duration: 1s;
+        animation-name: projecto;
+    }
+
+    .proyecto:hover .img-proyecto {
+        width: 94%;
+        animation-duration: 1s;
+        animation-name: projectoImg;
         height: 180px;
+
     }
 }
 
-.titulo{
+.titulo {
     text-align: center;
     font-size: 20px;
     margin: 8px;
 }
 
-.titulo a{
+.titulo a {
     font-family: "Rowdies", sans-serif;
     font-weight: 700;
-    color: #000000;
 }
 
-.img-proyecto{
-    width: 100%;
+.img-proyecto {
+    width: 94%;
     height: 160px;
 }
 
-.descripcion{
+.descripcion {
     padding: 10px;
     font-size: 15px;
 }
 
 /*ESTILOS DE EDUCACION*/
-#educacion{
+#educacion {
     padding-top: 100px;
     margin-bottom: 100px;
 }
 
-.info{
+.info {
     margin: 15px 0;
 }
 
-.info div{
+.info div {
     display: flex;
     justify-content: space-between;
     width: 60%;
@@ -266,74 +279,59 @@ h2 span{
     font-weight: bold;
 }
 
-.info .eduTitulo{
+.info .eduTitulo {
     font-size: 23px;
     font-weight: bolder;
-    color: #ab49a7;
-    text-shadow: 7px 4px 6px black;
 }
-.info p{
+
+.info p {
     font-size: 18px;
-    font-weight: 500;
-}
-
-.info .eduEnCurso{
-    color: #d1c73c;
-}
-
-.info .eduTiempo{
-    color: #4bf94b;
-}
-
-.info .educacion{
-    color: #f29111;
-    text-shadow: 4px 3px 5px #00758f;
+    font-weight: 900;
 }
 
 /*ESTILOS DE HABILIDADES*/
-#habilidades{
+#habilidades {
     padding-top: 100px;
 }
 
-#habilidades .muestraPorcentaje, #habilidades .habilidad{
+#habilidades .muestraPorcentaje,
+#habilidades .habilidad {
     display: flex;
     justify-content: center;
     width: 500px;
 }
 
-.habilidad img{
+.habilidad img {
     height: 100px;
     margin: 5px 10px 0;
 }
 
 /*ESTILOS DE CONTACTOS*/
-#contactos{
+#contactos {
     margin-top: 200px;
 }
 
-#contactos div{
+#contactos div {
     display: flex;
     align-items: center;
     margin-bottom: 15px;
 }
 
-#contactos div p{
+#contactos div p {
     font-size: 18px;
 }
 
-#contactos div img{
+#contactos div img {
     width: 20px;
     margin-right: 20px;
 }
 
-.final{
+.final {
     width: 60%;
     font-size: 31px;
-    text-shadow: 20px 19px 10px #ad52d1c2;
-    color: #02fea0;
 }
 
-.finalImg{
+.finalImg {
     width: 69px;
     margin: 10px 30px;
     margin-bottom: 50px;

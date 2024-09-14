@@ -1,0 +1,186 @@
+body {
+    background-color: #efde9c;
+    transition: 1s;
+}
+
+/* ESTILOS PARA EL NAV */
+header {
+    background-color: #cb9f6d;
+    transition: 1s;
+}
+
+a {
+    color: #551a8b;
+    transition: 1s;
+}
+
+
+.nav-list li a {
+    color: #551a8b;
+    transition: 1s;
+}
+
+/* ESTILOS PARA EL RESTO DE LA PAGINA*/
+h2 {
+    color: #551a88;
+    transition: 1s;
+}
+
+.btnDownload {
+    background-color: #501cc0;
+    color: #000000;
+    transition: 1s;
+}
+
+/*ESTILOS PARA LA SECCION sobreMi*/
+#sobreMi .sobreMi {
+    text-shadow: 3px 4px 4px #5500ff80;
+    transition: 1s;
+
+}
+
+#sobreMi .importante {
+    text-shadow: 4px 4px 15px #6e0e41;
+    color: #6e0e41;
+    transition: 1s;
+}
+
+/*ESTILOS DE PROYECTOS*/
+.proyecto {
+    background-color: #f25a4f91;
+    transition: 1s;
+}
+
+.titulo a {
+    color: #551a8b;
+    transition: 1s;
+}
+
+/*ESTILOS DE EDUCACION*/
+.info .eduTitulo {
+    color: #ab49a7;
+    transition: 1s;
+}
+
+.info .eduEnCurso {
+    color: #1f6903;
+    transition: 1s;
+}
+
+.info .eduTiempo {
+    color: #000000;
+    transition: 1s;
+}
+
+.info .educacion {
+    color: #000;
+    transition: 1s;
+}
+
+/*Modo oscuro*/
+.oscuro {
+    background-color: #251d46;
+    transition: 1s;
+}
+
+/* ESTILOS PARA EL NAV */
+.oscuro header {
+    background-color: #000000;
+    transition: 1s;
+}
+
+.oscuro .nav-list li a {
+    color: #d3b38e;
+    transition: 1s;
+}
+
+/* ESTILOS PARA EL RESTO DE LA PAGINA*/
+.oscuro h2 {
+    color: #ffcd03;
+    transition: 1s;
+}
+
+.oscuro a {
+    color: #f4c81a;
+    transition: 1s;
+}
+
+.oscuro h2 span {
+    color: #02fea0;
+    transition: 1s;
+}
+
+/*ESTILOS PARA LA SECCION YO*/
+.oscuro .bienvenida {
+    color: darkgray;
+    transition: 1s;
+}
+
+.oscuro .gmail {
+    color: #8099ca;
+    transition: 1s;
+}
+
+.oscuro .btnDownload {
+    background-color: #2eb74c;
+    color: #012a07;
+    transition: 1s;
+}
+
+.oscuro .imgYo {
+    background-color: white;
+    transition: 1s;
+}
+
+/*ESTILOS PARA LA SECCION sobreMi*/
+.oscuro #sobreMi .sobreMi {
+    color: #ef6d1c;
+    transition: 1s;
+}
+
+.oscuro #sobreMi .importante {
+    text-shadow: 17px 20px 7px #ad52d1c2;
+    color: #02fea0;
+    transition: 1s;
+}
+
+
+/*ESTILOS DE PROYECTOS*/
+.oscuro .proyecto {
+    background-color: #2f9fa5;
+    transition: 1s;
+}
+
+.oscuro .titulo a {
+    color: #000000;
+    transition: 1s;
+}
+
+/*ESTILOS DE EDUCACION*/
+.oscuro .info .eduTitulo {
+    color: #ab49a7;
+    transition: 1s;
+}
+
+.oscuro .info .eduEnCurso {
+    color: #d1c73c;
+    transition: 1s;
+}
+
+.oscuro .info .eduTiempo {
+    color: #4bf94b;
+    transition: 1s;
+}
+
+.oscuro .info .educacion {
+    color: #f29111;
+    text-shadow: 4px 3px 5px #00758f;
+    transition: 1s;
+}
+
+/*ESTILOS DE HABILIDADES*/
+.oscuro .final {
+    text-shadow: 20px 19px 10px #ad52d1c2;
+    color: #02fea0;
+    transition: 1s;
+}
