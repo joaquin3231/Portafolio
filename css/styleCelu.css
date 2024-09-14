@@ -56,13 +56,27 @@
     /* ESTILOS PARA EL RESTO DE LA PAGINA*/
 
     .contenedor{
-        width: min-content;
+        width: 98%;
     }
 
     header {
         padding: 2%;
-        width: 94%;
+        width: 96%;
     }    
+
+    h2 {
+        font-family: "Rowdies", sans-serif;
+        font-size: 45px;
+        margin-bottom: 15px;
+        width: max-content;
+    }
+    
+    h2 span {
+        font-family: "Rowdies", sans-serif;
+        font-size: 45px;
+        margin-bottom: 15px;
+        width: 500px;
+    }
 
     /*ESTILOS PARA LA SECCION YO*/
     #yo {
@@ -81,6 +95,7 @@
         width: 100%;
         text-align: justify;
         text-shadow: 4px 5px 4px black;
+        animation-name: none;
     }
 
     #sobreMi .importante {
@@ -118,6 +133,7 @@
 
         /* duracion de la animacio */
         animation-name: none;
+        animation-duration: none;
     }
 
     .titulo {
@@ -197,11 +213,13 @@
         display: flex;
         justify-content: center;
         width: 500px;
+        width: 100%;
+
     }
 
     .habilidad img {
-        height: 100px;
-        margin: 5px 10px 0;
+        height: 78px;
+        width: 80px;
     }
 
     /*ESTILOS DE CONTACTOS*/
@@ -233,7 +251,7 @@
 
     .finalImg {
         width: 69px;
-        margin: 10px 30px;
+        margin: 10px 25px;
         margin-bottom: 50px;
     }
 
