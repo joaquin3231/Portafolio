@@ -1,5 +1,6 @@
 @media screen and (max-width: 600px) {
 
+
     /* ESTILOS DEL NAV */
     .abrir-menu,
     .cerrar-menu {
@@ -83,6 +84,10 @@
         padding-top: 150px;
     }
 
+    #yo h2 {
+        animation-duration: none;
+        animation-name: none;
+    }
     /*ESTILOS PARA LA SECCION sobreMi*/
     #sobreMi {
         padding-top: 50px;
