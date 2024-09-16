@@ -13,7 +13,7 @@
 
     .abrir-menu {
         color: #1c1c1c;
-        margin-right: 10%;
+        margin-right: 1%;
     }
 
     .cerrar-menu {
@@ -21,6 +21,7 @@
     }
 
     .nav {
+        width: 100%;
         opacity: 0;
         visibility: hidden;
         display: flex;
@@ -32,9 +33,10 @@
         right: 0;
         bottom: 0;
         background-color: #1c1c1c;
-        padding-top: 25px;
-        padding-right: 50px;
+        padding-top: 14px;
+        padding-right: 15px;
         box-shadow: 0 0 0 100vmax rgba(0, 0, 0, .5);
+        transition: 0.5s;
     }
 
     .nav.visible {
@@ -99,7 +101,6 @@
         font-size: 18px;
         width: 100%;
         text-align: justify;
-        text-shadow: 4px 5px 4px black;
         animation-name: none;
     }
 
@@ -108,8 +109,6 @@
         font-size: 21px;
         font-weight: bold;
         width: 100%;
-        text-shadow: 17px 20px 7px #ad52d1c2;
-        color: #02fea0;
     }
 
 
@@ -131,8 +130,6 @@
     .proyecto {
         margin: auto;
         width: 90%;
-        background-color: #2f9fa5;
-
         margin-bottom: 15px;
         border-radius: 10px;
 
@@ -150,7 +147,6 @@
     .titulo a {
         font-family: "Rowdies", sans-serif;
         font-weight: 700;
-        color: #000000;
     }
 
     .img-proyecto {
@@ -184,28 +180,12 @@
     .info .eduTitulo {
         font-size: 20px;
         font-weight: bolder;
-        color: #ab49a7;
-        text-shadow: 7px 4px 6px black;
-
         flex: 3;
     }
 
     .info p {
         font-size: 18px;
         font-weight: 500;
-    }
-
-    .info .eduEnCurso {
-        color: #d1c73c;
-    }
-
-    .info .eduTiempo {
-        color: #4bf94b;
-    }
-
-    .info .educacion {
-        color: #f29111;
-        text-shadow: 4px 3px 5px #00758f;
     }
 
     /*ESTILOS DE HABILIDADES*/
@@ -250,8 +230,6 @@
     .final {
         width: 60%;
         font-size: 31px;
-        text-shadow: 20px 19px 10px #ad52d1c2;
-        color: #02fea0;
     }
 
     .finalImg {
